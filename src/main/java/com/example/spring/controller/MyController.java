@@ -1,6 +1,6 @@
-package com.example.controller;
+package com.example.spring.controller;
 
-import com.example.dto.MyDto;
+import com.example.spring.dto.MyDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,6 +22,6 @@ public class MyController {
         System.out.println("First Page");
         MyDto dto = new MyDto();
         dto.setName("Justin");
-        return "Hello Spring" + dto.getName();
+        return "Hello " + dto.getName();
     }
 }
